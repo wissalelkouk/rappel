@@ -62,8 +62,6 @@ INSERT INTO comptes (proprietaire, solde) VALUES
 ('Carol', 500.00);
 ```
 
-![Création de la base de données et table](images/database_creation.png)
-
 ### 4. Configuration de l'Application
 
 Modifier les constantes dans `CompteDAO.java` :
