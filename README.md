@@ -2,7 +2,7 @@
 
 Une application bancaire simple développée en Java avec intégration PostgreSQL pour la gestion des comptes.
 
-## 📋 Description
+## Description
 
 Ce projet implémente une application bancaire avec les fonctionnalités suivantes :
 - Gestion des comptes standards
@@ -11,7 +11,7 @@ Ce projet implémente une application bancaire avec les fonctionnalités suivant
 - Connexion à une base de données PostgreSQL
 - Gestion des exceptions
 
-## 🏗️ Structure du Projet
+## Structure du Projet
 
 ```
 rappel/
@@ -24,7 +24,7 @@ rappel/
 └── README.md                  - Ce fichier
 ```
 
-## 🚀 Étapes d'Installation et d'Exécution
+## Étapes d'Installation et d'Exécution
 
 ### 1. Prérequis
 
@@ -93,40 +93,40 @@ jar cvfe banque.jar TestCompte *.class
 java -cp "banque.jar;postgresql-42.7.10.jar" TestCompte
 ```
 
-## 📋 Tâches Réalisées
+## Tâches Réalisées
 
-### ✅ Phase 1: Développement des Classes Métier
+### Phase 1: Développement des Classes Métier
 - [x] Création de la classe `Compte` avec attributs de base
 - [x] Implémentation des méthodes `deposer()` et `retirer()`
 - [x] Gestion des exceptions avec `MontantNonValideException`
 - [x] Redéfinition de `toString()` pour l'affichage
 
-### ✅ Phase 2: Classes Spécialisées
+### Phase 2: Classes Spécialisées
 - [x] Création de `CompteEpargne` avec taux d'intérêt
 - [x] Calcul automatique des intérêts
 - [x] Création de `CompteDevise` avec gestion des devises
 - [x] Affichage du montant avec devise
 
-### ✅ Phase 3: Persistance des Données
+### Phase 3: Persistance des Données
 - [x] Implémentation de `CompteDAO` avec JDBC
 - [x] Connexion à PostgreSQL
 - [x] Méthodes CRUD (Create, Read, Update, Delete)
 - [x] Gestion des exceptions SQL
 
-### ✅ Phase 4: Tests et Validation
+### Phase 4: Tests et Validation
 - [x] Création de `TestCompte` avec scénarios de test
 - [x] Test des opérations bancaires de base
 - [x] Test des exceptions
 - [x] Test de la connexion base de données
 
-### ✅ Phase 5: Déploiement
+### Phase 5: Déploiement
 - [x] Configuration de l'environnement Java
 - [x] Compilation du projet
 - [x] Création du JAR exécutable
 - [x] Tests d'exécution
 - [x] Mise en place sur GitHub
 
-## 🎯 Fonctionnalités Implémentées
+## Fonctionnalités Implémentées
 
 ### Compte Standard
 - Dépôt d'argent
@@ -148,7 +148,7 @@ java -cp "banque.jar;postgresql-42.7.10.jar" TestCompte
 - Requêtes SQL paramétrées
 - Gestion des erreurs de connexion
 
-## 🐛 Résolution des Problèmes
+## Résolution des Problèmes
 
 ### Configuration Java
 - **Problème**: `javac` non reconnu
@@ -165,7 +165,7 @@ java -cp "banque.jar;postgresql-42.7.10.jar" TestCompte
 - **Solution**: Configuration .gitignore et nettoyage historique
 - **Outils**: `git filter-branch` pour supprimer les gros fichiers
 
-## 🔧 Commandes Utiles
+## Commandes Utiles
 
 ### Développement
 ```bash
@@ -191,7 +191,7 @@ git remote add origin https://github.com/wissalelkouk/rappel.git
 git push -u origin main
 ```
 
-## 📊 Résultats Attendus
+## Résultats Attendus
 
 L'application doit afficher :
 ```
@@ -204,19 +204,3 @@ CompteDevise{id=3, proprietaire='Carol', solde=500.0 EUR}
 Exception capturée : Le montant à retirer doit être positif.
 ```
 
-## 🚀 Améliorations Futures
-
-- [ ] Interface graphique (JavaFX/Swing)
-- [ ] Authentification des utilisateurs
-- [ ] Historique des transactions
-- [ ] Conversion entre devises
-- [ ] Tests unitaires (JUnit)
-- [ ] Documentation API (Javadoc)
-
-## 👤 Auteur
-
-**Wissal El Kouk** - Développeur Java
-
-## 📅 Date
-
-25 Février 2026
