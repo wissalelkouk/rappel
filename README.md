@@ -160,37 +160,6 @@ java -cp "banque.jar;postgresql-42.7.10.jar" TestCompte
 - **Solution**: Inclusion du driver dans le classpath
 - **Commande**: `java -cp "banque.jar;postgresql-42.7.10.jar" TestCompte`
 
-### Déploiement GitHub
-- **Problème**: Fichiers volumineux (>100MB)
-- **Solution**: Configuration .gitignore et nettoyage historique
-- **Outils**: `git filter-branch` pour supprimer les gros fichiers
-
-## Commandes Utiles
-
-### Développement
-```bash
-# Compiler
-javac -cp postgresql-42.7.10.jar *.java
-
-# Exécuter
-java -cp "banque.jar;postgresql-42.7.10.jar" TestCompte
-
-# Créer JAR
-jar cvfe banque.jar TestCompte *.class
-```
-
-### Git
-```bash
-# Initialiser
-git init
-git add .
-git commit -m "message"
-
-# Push vers GitHub
-git remote add origin https://github.com/wissalelkouk/rappel.git
-git push -u origin main
-```
-
 ## Résultats Attendus
 
 L'application doit afficher :
